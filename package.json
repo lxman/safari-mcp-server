@@ -1,0 +1,57 @@
+{
+  "name": "safari-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for Safari browser automation with dev tools access",
+  "keywords": [
+    "mcp",
+    "safari",
+    "browser-automation",
+    "dev-tools",
+    "webdriver"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lxman/safari-mcp-server.git"
+  },
+  "license": "MIT",
+  "author": "Jordan",
+  "type": "module",
+  "main": "build/index.js",
+  "types": "./build/index.d.ts",
+  "bin": {
+    "safari-mcp": "build/index.js"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "start": "node build/index.js",
+    "dev": "tsc && node build/index.js",
+    "watch": "tsc --watch",
+    "clean": "rimraf build",
+    "test": "npm run build && node build/basic-tests.js",
+    "setup": "bash setup.sh",
+    "example": "npm run build && node build/example-usage.js",
+    "inspect": "npx @modelcontextprotocol/inspector node build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "selenium-webdriver": "^4.26.1",
+    "safaridriver": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/selenium-webdriver": "^4.1.27",
+    "@modelcontextprotocol/inspector": "^0.1.0",
+    "typescript": "^5.7.2",
+    "rimraf": "^6.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "os": [
+    "darwin"
+  ]
+}
