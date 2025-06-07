@@ -4,7 +4,7 @@
 
 You now have a complete Safari MCP Server project at:
 ```
-C:\Users\jorda\RiderProjects\AIPacketAnalyzer\safari-mcp-server\
+/Users/<USERNAME>/source/repos/safari-mcp-server/
 ```
 
 This server provides AI assistants with comprehensive Safari browser automation and developer tools access through the Model Context Protocol (MCP).
@@ -36,7 +36,7 @@ safari-mcp-server/
 
 ### 1. Install Dependencies
 ```bash
-cd "C:\Users\jorda\RiderProjects\AIPacketAnalyzer\safari-mcp-server"
+cd "/Users/<USERNAME>/source/repos/safari-mcp-server"
 npm install
 ```
 
@@ -103,7 +103,7 @@ npm start
     "safari-devtools": {
       "command": "node",
       "args": [
-        "C:/Users/jorda/RiderProjects/AIPacketAnalyzer/safari-mcp-server/build/index.js"
+        "/Users/<USERNAME>/source/repos/safari-mcp-server/build/index.js"
       ]
     }
   }

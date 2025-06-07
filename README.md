@@ -39,7 +39,7 @@ Before using this MCP server, you need to enable Safari's automation features:
 
 1. **Clone or navigate to the project directory**:
    ```bash
-   cd C:\Users\jorda\RiderProjects\AIPacketAnalyzer\safari-mcp-server
+   cd C:\Users\<USERNAME>\RiderProjects\AIPacketAnalyzer\safari-mcp-server
    ```
 
 2. **Install dependencies**:
@@ -98,7 +98,7 @@ Add this configuration to your Claude Desktop config file:
   "mcpServers": {
     "safari-devtools": {
       "command": "node",
-      "args": ["C:/Users/jorda/RiderProjects/AIPacketAnalyzer/safari-mcp-server/build/index.js"]
+      "args": ["C:/Users/<USERNAME>/RiderProjects/AIPacketAnalyzer/safari-mcp-server/build/index.js"]
     }
   }
 }
